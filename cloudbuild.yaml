@@ -14,7 +14,7 @@ steps:
     args:
       [
         "push",
-        "asia-south1-docker.pkg.dev/nifty-foundry-391404/flaskapi/apprepo:latest",
+        "asia-south1-docker.pkg.dev/nifty-foundry-391404/apprepo/flaskapi:latest",
       ]
 
   # Deploy the image to Cloud Run
