@@ -14,7 +14,7 @@ steps:
     args:
       [
         "push",
-        "us-central1-docker.pkg.dev/stunning-saga-386406/test-repo/flask-server:latest",
+        "asia-south1-docker.pkg.dev/nifty-foundry-391404/apprepo",
       ]
 
   # Deploy the image to Cloud Run
@@ -24,9 +24,9 @@ steps:
       - "deploy"
       - "flask-server"
       - "--image"
-      - "us-central1-docker.pkg.dev/stunning-saga-386406/test-repo/flask-server:latest"
+      - "asia-south1-docker.pkg.dev/nifty-foundry-391404/apprepo"
       - "--region"
-      - "us-central1"
+      - "asis-south1"
       - "--platform"
       - "managed"
       - "--allow-unauthenticated"
