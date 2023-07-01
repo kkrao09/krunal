@@ -5,7 +5,7 @@ steps:
       [
         "build",
         "-t",
-        "asia-south1-docker.pkg.dev/nifty-foundry-391404/apprepo/flaskapi:latest",
+        "us-central1-docker.pkg.dev/nifty-foundry-391404/repo2/flaskapi:latest",
         ".",
       ]
 
@@ -14,7 +14,7 @@ steps:
     args:
       [
         "push",
-        "asia-south1-docker.pkg.dev/nifty-foundry-391404/apprepo/flaskapi:latest",
+        "us-central1-docker.pkg.dev/nifty-foundry-391404/repo2/flaskapi:latest",
       ]
 
   # Deploy the image to Cloud Run
@@ -24,9 +24,9 @@ steps:
       - "deploy"
       - "flask-server"
       - "--image"
-      - "asia-south1-docker.pkg.dev/nifty-foundry-391404/apprepo/flaskapi:latest"
+      - "us-central1-docker.pkg.dev/nifty-foundry-391404/repo2/flaskapi:latest"
       - "--region"
-      - "asia-south1"
+      - "us-central1"
       - "--platform"
       - "managed"
       - "--allow-unauthenticated"
